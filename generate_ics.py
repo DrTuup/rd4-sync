@@ -1,7 +1,7 @@
 import os
 import requests
 from ics import Calendar, Event, DisplayAlarm
-from datetime import date, timedelta
+from datetime import date, timedelta, datetime
 
 postal_code = os.getenv('POSTAL_CODE')
 house_number = os.getenv('HOUSE_NUMBER')
@@ -42,3 +42,5 @@ for event in events:
 # Save the calendar to a file
 with open('data/schedule.ics', 'w') as f:
     f.writelines(c.serialize())
+
+print(datetime.now(), 'ICS file generated successfully.')
