@@ -4,7 +4,7 @@
 python3 /app/generate_ics.py
 
 # Start cron
-supercronic /app/crontab.txt
+supercronic /app/crontab.txt &
 
 # Serve files
 cd /app/data
