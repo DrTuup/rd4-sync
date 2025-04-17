@@ -1,0 +1,11 @@
+name: RD4-sync
+services:
+  rd4-sync:
+    build: .
+    container_name: rd4-sync
+    restart: unless-stopped
+    environment:
+      - POSTAL_CODE=6369GM
+      - HOUSE_NUMBER=67
+    ports:
+      - "8080:8080"
