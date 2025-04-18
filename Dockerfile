@@ -9,7 +9,7 @@ RUN mkdir -p /app /data
 WORKDIR /app
 
 # Copy files
-COPY generate_ics.py crontab.txt entrypoint.sh requirements.txt /app/
+COPY generate_ics.py serve.py crontab.txt entrypoint.sh requirements.txt /app/
 
 # Make output directory for ics file
 RUN mkdir -p /app/data/

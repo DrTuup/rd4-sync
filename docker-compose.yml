@@ -8,4 +8,4 @@ services:
       - POSTAL_CODE=6369GM
       - HOUSE_NUMBER=67
     ports:
-      - "8080:8080"
+      - "8081:8080"
